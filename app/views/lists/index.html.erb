@@ -1,9 +1,19 @@
-<h1>Lists#index</h1>
-<p>My lists</p>
-<ul>
+<div class= "banner">
+  <div class= "banner-container container-fluid">
+    <div class = "text-container">
+      <h1>Save any kind of movies</h1>
+      <p>classic</p>
+    </div>
+    <div class = "button-container">
+      <button class = "banner_btn btn btn-outline-secondary"><%= link_to "create a movie list", new_list_path %></button>
+    </div>
+  </div>
+</div>
+
+<h2>My lists</h2>
+<ul class = "lists-container">
 <% @lists.each do |list| %>
-<%= link_to list.name, list_path(list)  %><br>
+<li class="list-container"><%= link_to list.name, list_path(list)  %></li><br>
   <% end  %>
 </ul>
 
-<%= link_to "create a movie list", new_list_path %>

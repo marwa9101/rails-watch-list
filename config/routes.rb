@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # route nested in lists
     # create a bookmark : add a bookmark [list/movie] (get new/post create)
     # delete a bookmark : delete bookmarks/:id
+    root to: "lists#index"
   resources :lists, only: [:index, :new, :create, :show] do
     resources :bookmarks, only: [:new, :create]
   end

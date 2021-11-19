@@ -1,0 +1,23 @@
+.banner{
+    background-color: $navy ;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url(asset_path("cinema.jpg"));
+    background-position: center;
+}
+.banner h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+.banner-container{
+    height: 100px;
+    margin-top: 90px;
+    margin-left: 120px;
+    margin-right: 50px;
+    padding: 40px;
+    color: $beige;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
