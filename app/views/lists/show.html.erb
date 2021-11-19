@@ -1,0 +1,16 @@
+<h1>List#show</h1>
+<p>Find me in app/views/list/show.html.erb</p>
+<h2><%= @list.name %></h2>
+<ul>
+  <% @movies.each do |movie| %></p>
+    <li><%= movie.title %> <%= movie.rating %><br> <%= movie.overview %> <br>
+        <% bookmark = Bookmark.find_by(list: @list, movie: movie) %> 
+        <%= bookmark.comment %> </li>
+    <%= link_to "delete", bookmark_path(bookmark.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+   <%end%>
+</ul>
+
+
+<%= link_to "return to the lists", lists_path %>
+<%= link_to "add movie", new_list_bookmark_path(@list.id)%>
+
