@@ -1,3 +1,51 @@
-.list-container{
-    width: 100px;
+//***************** grid ***********************//
+.card-grid{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 10px;
 }
+@media(max-width: 992px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+@media(max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+//****************** card ********************//
+.list-card{
+    position: absolute;
+    margin-left: 110px;
+    padding-top: 85px;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0000000e;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    background-image: url(asset_path("background.png"));
+    &:hover{
+        background-color: #2b4f6080;
+        a{
+            font-size: 20px;
+        }
+    }
+}
+.background-card{
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.links-cards a{
+    text-decoration: none;
+    color: #EEEEEE;
+   
+   
+}
+
+

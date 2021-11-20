@@ -1,23 +1,22 @@
 .banner{
+    position: relative;
     background-color: $navy ;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url(asset_path("cinema.jpg"));
-    background-position: center;
-}
-.banner h1{
-    font-size: 25px;
-    font-weight: 700;
+    height: 500px;
+    width: 100%;
+    color: $beige;  
+    background-image: url(asset_path("3.jpg"));
+    //background-size: 90% 100%;
+    background-repeat: no-repeat;
+    //background-position: center;
 }
 .banner-container{
-    height: 100px;
-    margin-top: 90px;
-    margin-left: 120px;
-    margin-right: 50px;
-    padding: 40px;
-    color: $beige;  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 530px;
+    text-align: center;
+    width: 60%;
+    h2 {
+        text-align: center;
+        color: $beige;
+    }
 }
