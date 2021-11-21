@@ -1,15 +1,16 @@
 .button-container{
     text-align: end;
-    margin-right: 70px;
-    margin-top: 50px;
+    margin-right: 20px;
+    margin-top: 70px;
+    
 }
 .button-container a{
-    color: $beige;
+    color: $navy;
     text-decoration: none;
 }
 .button-container:hover{
     a{
-        color: $navy;
+        color: $beige;
         text-decoration: none;
     }
 }

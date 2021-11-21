@@ -23,13 +23,16 @@
     height: 200px;
     margin: 0 auto;
     text-align: center;
-    background-color: #0000000e;
+    background-color: #eeeeee3f;
+    //background-color: #000000c0;
     font-size: 15px;
     font-weight: 700;
     border: none;
     background-image: url(asset_path("background.png"));
     &:hover{
-        background-color: #2b4f6080;
+        //background-color: #2b4f6080;
+        background-size: 20px;
+        background-image: url(asset_path("background.png"));
         a{
             font-size: 20px;
         }

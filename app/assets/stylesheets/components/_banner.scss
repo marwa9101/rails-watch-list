@@ -1,13 +1,13 @@
 .banner{
     position: relative;
-    background-color: $navy ;
-    height: 500px;
+    background-color: $beige ;
+    height:500px;
     width: 100%;
-    color: $beige;  
-    background-image: url(asset_path("3.jpg"));
-    //background-size: 90% 100%;
-    background-repeat: no-repeat;
-    //background-position: center;
+    color: $navy;  
+     background-image: url(asset_path("2.jpg"));
+     background-size: 100% 100%;
+     //background-repeat: no-repeat;
+     //background-clip:  ;
 }
 .banner-container{
     position: absolute;
@@ -19,4 +19,7 @@
         text-align: center;
         color: $beige;
     }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

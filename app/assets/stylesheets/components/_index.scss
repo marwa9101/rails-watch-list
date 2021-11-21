@@ -11,14 +11,6 @@ body{
     background-color: #f1d1d1;
     background-image: url(asset_path("1.jpg"));
 }
-.container{
-    margin-top: 100px;
-    h2{
-        text-align: center;
-        color: $beige;
-    }
-}
-
 .lists-container{
     display: flex;
 }
