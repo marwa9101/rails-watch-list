@@ -4,9 +4,9 @@
     height:500px;
     width: 100%;
     color: $navy;  
-     background-image: url(asset_path("2.jpg"));
+     background-image: url(asset_path("banner.png"));
      background-size: 100% 100%;
-     //background-repeat: no-repeat;
+     background-repeat: no-repeat;
      //background-clip:  ;
 }
 .banner-container{
